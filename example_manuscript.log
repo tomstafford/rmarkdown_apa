@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.12.15)  16 DEC 2020 10:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.12.15)  16 DEC 2020 10:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -619,9 +619,9 @@ G,.JBIG2,.JB2,.eps]
 (/home/tom/.TinyTeX/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
-))
-Class apa6 Info: Language definition file config/APAamerican.txt not found on i
-nput line 141.
+)) (/home/tom/.TinyTeX/texmf-dist/tex/latex/apa6/config/APAamerican.txt
+File: APAamerican.txt 2012/02/23 v1.25 apa6 configuration for American English
+)
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: longtable package is loaded.
@@ -715,27 +715,31 @@ df  used on input line 182.
 [1{/home/tom/.TinyTeX/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 
- <./figs/kittens.jpg>] [2 <./example_manuscript_files/figure-latex/ourhistogram
--1.pdf>] (./example_manuscript.aux)
+ <./figs/kittens.jpg>]
+Underfull \vbox (badness 1558) has occurred while \output is active []
+
+[2 <./example_manuscript_files/figure-latex/ourhistogram-1.pdf>] (./example_man
+uscript.aux)
 Package rerunfilecheck Info: File `example_manuscript.out' has not changed.
 (rerunfilecheck)             Checksum: 707231BB1556FCA7086A713530F8C0F6;969.
  ) 
 Here is how much of TeX's memory you used:
- 14382 strings out of 481331
- 210321 string characters out of 5917526
- 536722 words of memory out of 5000000
- 30921 multiletter control sequences out of 15000+600000
- 454723 words of font info for 109 fonts, out of 8000000 for 9000
+ 14388 strings out of 481331
+ 210537 string characters out of 5917526
+ 536828 words of memory out of 5000000
+ 30922 multiletter control sequences out of 15000+600000
+ 455909 words of font info for 111 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  80i,9n,85p,3177b,392s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/home/tom/.TinyTeX/texmf-dist/fonts/enc/dvips/base/8r.enc}</home/tom/.TinyTe
-X/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></home/tom/.TinyTeX/texmf-dist/fo
-nts/type1/urw/times/utmr8a.pfb></home/tom/.TinyTeX/texmf-dist/fonts/type1/urw/t
-imes/utmri8a.pfb>
-Output written on example_manuscript.pdf (2 pages, 147228 bytes).
+X/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></home/tom/.TinyTeX/texm
+f-dist/fonts/type1/urw/times/utmb8a.pfb></home/tom/.TinyTeX/texmf-dist/fonts/ty
+pe1/urw/times/utmr8a.pfb></home/tom/.TinyTeX/texmf-dist/fonts/type1/urw/times/u
+tmri8a.pfb>
+Output written on example_manuscript.pdf (2 pages, 155046 bytes).
 PDF statistics:
- 109 PDF objects out of 1000 (max. 8388607)
- 98 compressed objects within 1 object stream
+ 114 PDF objects out of 1000 (max. 8388607)
+ 101 compressed objects within 2 object streams
  30 named destinations out of 1000 (max. 500000)
  83 words of extra memory for PDF output out of 10000 (max. 10000000)
 

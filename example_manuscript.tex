@@ -188,7 +188,7 @@ You can't see it, but in between this paragraph and the last we asked R to gener
 
 See Figure \ref{fig:ourhistogram}. Of course we could draw all sorts of things, but this is a proof-of-concept. Finally, let's run a t-test and integrate the results into the text.
 
-We found there was a statistically significant difference between the two groups (t=-5.61 (592.69), p = 0.00). Note how the exact values in the previous sentence change every time we re-make the document (because the document also re-generates the underlying data).
+We found there was a statistically significant difference between the two groups (t=-6.33 (591.15), p = 0.00). Note how the exact values in the previous sentence change every time we re-make the document (because the document also re-generates the underlying data).
 
 Unanswered questions: Is this the best way to integrate values into text? Why is the df not an integer? What is the best way to define figure sizes so you get nice and/or consistent sizing across document formats?
 
@@ -198,6 +198,20 @@ Unanswered questions: Is this the best way to integrate values into text? Why is
 Make your document by opening .Rmd file in RStudio and clicking \enquote{knit}
 
 Rmarkdown is good (Allaire et al., 2020). Need to change reference style? Change one line. Need to submit as PDF rather than .DOC? Just click \enquote{Word} as output rather than \enquote{PDF} (instructions here \url{https://rmarkdown.rstudio.com/articles_docx.html}). Need to change to two column style to make a nice pre-print? Again, simple - just change one line! In line 40 \enquote{class : \enquote{man}} gives you manuscript style; \enquote{jou} gives you two column style.
+
+To port to your own project just copy across these files:
+
+\begin{itemize}
+\tightlist
+\item
+  example\_manuscript.rmd
+\item
+  apa6.cls - style file which makes everything look APA format nice
+\item
+  references.bib - information on references in bibtex format
+\item
+  figs folder - where images integrated into the manuscript are kept
+\end{itemize}
 
 \hypertarget{main-conclusions}{%
 \subsection{Main conclusions}\label{main-conclusions}}

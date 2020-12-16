@@ -167,6 +167,13 @@ Make your document by opening .Rmd file in RStudio and clicking 'knit'
 
 Rmarkdown is good [@rmarkdowncite]. Need to change reference style? Change one line. Need to submit as PDF rather than .DOC? Just click 'Word' as output rather than 'PDF' (instructions here https://rmarkdown.rstudio.com/articles_docx.html). Need to change to two column style to make a nice pre-print? Again, simple - just change one line! In line 40 'class             : "man"' gives you manuscript style; "jou" gives you two column style.
 
+To port to your own project just copy across these files:
+
+* example_manuscript.rmd
+* apa6.cls - style file which makes everything look APA format nice
+* references.bib - information on references in bibtex format
+* figs folder - where images integrated into the manuscript are kept
+
 ## Main conclusions
 
 Of course, there's more effort in installing and learning and correctly marking up your document in the first place, but it is worth it
