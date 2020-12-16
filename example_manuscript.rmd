@@ -56,7 +56,7 @@ You will find it useful to compare the output PDF document with the .rmd documen
 
 ## Example Subheading
 
-Here are some example references in the following sentence. For reviews of this topic see @wickelgren1977speed; @heitz2014speed. Here is another example reference [e.g. @stafford2011pieron][^p]. This paper was produced as part of the 'code club' held in the Department of Psychology at the Univetrsity of Sheffield in 2019, organised by Tom Stafford and Kat Giannadou. 
+Here are some example references in the following sentence. For reviews of this topic see @wickelgren1977speed; @heitz2014speed. Here is another example reference [e.g. @stafford2020][^p]. This paper was produced as part of the 'code club' held in the Department of Psychology at the Univetrsity of Sheffield in 2019, organised by Tom Stafford and Kat Giannadou. 
 
 [^p]: As well as an example of a footnote.
 
@@ -71,10 +71,18 @@ knitr::include_graphics("figs/kittens.jpg")
 
 ## Requirements
 
-You should install R, RStudio and tex and papaja. More details here https://crsh.github.io/papaja_man/introduction.html#getting-started
+You should install R, RStudio and tex and papaja [@aust2020]. More details here https://crsh.github.io/papaja_man/introduction.html#getting-started
 
 
+```{r}
+#Once you've installed R/RStudio
+#install.packages('tinytex')
+#tinytex::install_tinytex()
+#install.packages("devtools") 
+#devtools::install_github("crsh/papaja")
 
+#imo computational reproducibility / dependency management in R is a mess, but there we are
+```
 
 # Results
 
@@ -155,7 +163,9 @@ Unanswered questions: Is this the best way to integrate values into text? Why is
 
 # Discussion
 
-Rmarkdown is good. Need to change reference style? Change one line. Need to submit as PDF rather than .DOC? Just click 'Word' as output rather than 'PDF' (instructions here https://rmarkdown.rstudio.com/articles_docx.html). Need to change to two column style to make a nice pre-print? Again, simple - just change one line!
+Make your document by opening .Rmd file in RStudio and clicking 'knit' 
+
+Rmarkdown is good [@rmarkdowncite]. Need to change reference style? Change one line. Need to submit as PDF rather than .DOC? Just click 'Word' as output rather than 'PDF' (instructions here https://rmarkdown.rstudio.com/articles_docx.html). Need to change to two column style to make a nice pre-print? Again, simple - just change one line! In line 40 'class             : "man"' gives you manuscript style; "jou" gives you two column style.
 
 ## Main conclusions
 
@@ -164,6 +174,11 @@ Of course, there's more effort in installing and learning and correctly marking 
 
 # Acknowledgements
 
-This is an example acknowledgments section
+This is an example acknowledgments section. 
+
+```{r results="hide"}
+#how to get a citation for packages you use
+citation('papaja')
+```
 
 # References
