@@ -1,0 +1,169 @@
+---
+title             : "Integrating analysis code and document preparation : A minimal example Rmarkdown + papaja document"
+shorttitle        : "Example Rmarkdown document"
+
+author: 
+  - name          : "Tom Stafford"
+    affiliation   : "1"
+    corresponding : yes    # Define only one corresponding author
+    address       : "Department of Psychology, University of Sheffield, 1 Vicar Lane, Sheffield, S1 2LT, UK"
+    email         : "t.stafford@sheffield.ac.uk"
+  - name          : "Able Coauthor"
+    affiliation   : "2"
+
+    
+
+affiliation:
+  - id            : "1"
+    institution   : "Department of Psychology, University of Sheffield"
+  - id            : "2"
+    institution   : "Department of Psychosocial Science, University of Bergen"
+
+
+abstract: |
+  R is a statistical programming language which is increasingly popular with psychologists. It can import and process your data, fit statistical models (from simple t-tests to state of the art such as bayesian multilevel model fitting). It also makes nice plots. RStudio is a way of editing R scripts and running R analysis. RMarkdown is a way of using RStudio to produce documents (e.g. as webpages, MS Word or PDF). Another advantage is that you can include R code in your document file - so no more running your analysis in SPSS and copying the results into your document (and making errors / forgetting which version of the analysis you ran etc). This is an example document which integrates all the functions of Rmarkdown - running analysis, formatting references, etc. It uses an add-on for Rmarkdown called papaja which helps us make nicely APA formatted documents
+
+
+note              : \textcolor{red}{This is an example of a note}
+
+
+
+bibliography      : ["references.bib"]
+
+figsintext        : yes
+figurelist        : no
+tablelist         : no
+footnotelist      : no
+lineno            : no
+mask              : no
+
+class             : "jou"
+output            : papaja::apa6_pdf
+#output            : bookdown::html_document2
+
+---
+
+```{r setup,}
+library(knitr)
+knitr::opts_chunk$set(echo = FALSE, message=FALSE, warning=FALSE, fig.height=2, fig.width=4)
+```
+
+`r figsize<-'68%'`
+
+# Introduction
+
+You will find it useful to compare the output PDF document with the .rmd document. This latter item is the thing you edit to produce the PDF. 
+
+## Example Subheading
+
+Here are some example references in the following sentence. For reviews of this topic see @wickelgren1977speed; @heitz2014speed. Here is another example reference [e.g. @stafford2011pieron][^p]. This paper was produced as part of the 'code club' held in the Department of Psychology at the Univetrsity of Sheffield in 2019, organised by Tom Stafford and Kat Giannadou. 
+
+[^p]: As well as an example of a footnote.
+
+
+# Method
+
+Rmarkdown also lets us track figure labels, and updates them automatically. Look! Kittens! Illustrated in Figure \@ref(fig:examplefigurename).
+
+```{r examplefigurename, fig.cap="Example figure caption", fig.align="center", out.width="75%"}
+knitr::include_graphics("figs/kittens.jpg")
+```
+
+## Requirements
+
+You should install R, RStudio and tex and papaja. More details here https://crsh.github.io/papaja_man/introduction.html#getting-started
+
+
+
+
+# Results
+
+Now let's integrate some R code to generate/import some data, run and analyse and integrate it into the document:
+
+```{r results='hide'}
+#copying from https://bookdown.org/yihui/rmarkdown/r-code.html
+#this is some R code which evaluates when you make the document
+#
+
+#----------------Code for generating some random data
+
+#parameters of our variables
+meanA <- 100
+sdA <- 15
+d <- .5
+sdB <- sdA
+pooledSD <- sdA
+meanB <- meanA + (d * pooledSD)
+n1 <- 300
+n2 <- 300
+
+#create random data, put into dataframe
+groupA <- rnorm(n1, meanA, sdA)
+groupB <- rnorm(n2, meanB, sdB)
+sub <- 1:length(n1+n2)
+group <- c(rep(0,n1) ,rep(1,n2))
+values <- c(groupA, groupB)
+df <- data.frame(sub, group, values)
+
+#add some missing values
+index <- sample(1:(n1+n2),5)
+df[index, 3] <- NA
+
+#export to a file
+write.csv(df, file = "generateddata.csv")
+```
+
+You can't see it, but in between this paragraph and the last we asked R to generate some random data and save it to a CSV file. Now we're going to import the data from the CSV file, as if it was independently created data - from an experiment or similar - and plot a graph.
+
+```{r ourhistogram, fig.cap="Histogram of all data, grouped", fig.align="center", out.width="75%",fig.height=4}
+#load data
+df=read.csv("generateddata.csv")
+
+
+#make histogram
+#cribbing from https://www.statmethods.net/graphs/density.html
+x <- df$values
+x <- na.omit(x) #drop missing values
+h<-hist(x, breaks=20, col="red", xlab="value")
+xfit<-seq(min(x),max(x),length=40)
+yfit<-dnorm(xfit,mean=mean(x),sd=sd(x))
+yfit <- yfit*diff(h$mids[1:2])*length(x)
+lines(xfit, yfit, col="blue", lwd=2) 
+```
+
+See Figure \@ref(fig:ourhistogram). Of course we could draw all sorts of things, but this is a proof-of-concept. Finally, let's run a t-test and integrate the results into the text.
+
+```{r}
+#note that seperate code chunks remember variables from previous chunks, so we don't need to reload the data
+df$group <- as.factor(df$group)
+model1<-t.test(df$values ~ df$group)
+
+p<- model1$p.value
+t<- model1$statistic
+df<- model1$parameter
+if(p<0.05){
+  word<-"a"
+} else {
+  word<-"no"
+}
+    
+```
+
+We found there was `r word` statistically significant difference between the two groups (t=`r t` (`r df`), p = `r p`). Note how the exact values in the previous sentence change every time we re-make the document (because the document also re-generates the underlying data).
+
+Unanswered questions: Is this the best way to integrate values into text? Why is the df not an integer? What is the best way to define figure sizes so you get nice and/or consistent sizing across document formats?
+
+# Discussion
+
+Rmarkdown is good. Need to change reference style? Change one line. Need to submit as PDF rather than .DOC? Just click 'Word' as output rather than 'PDF' (instructions here https://rmarkdown.rstudio.com/articles_docx.html). Need to change to two column style to make a nice pre-print? Again, simple - just change one line!
+
+## Main conclusions
+
+Of course, there's more effort in installing and learning and correctly marking up your document in the first place, but it is worth it
+
+
+# Acknowledgements
+
+This is an example acknowledgments section
+
+# References
