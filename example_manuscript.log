@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.12.15)  16 DEC 2020 10:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.12.15)  17 DEC 2020 10:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -553,24 +553,24 @@ File: l3backend-pdftex.def 2020-09-24 L3 backend support: PDF output (pdfTeX)
 ) (./example_manuscript.aux)
 \openout1 = `example_manuscript.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 141.
-LaTeX Font Info:    ... okay on input line 141.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 141.
-LaTeX Font Info:    ... okay on input line 141.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 141.
-LaTeX Font Info:    ... okay on input line 141.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 141.
-LaTeX Font Info:    ... okay on input line 141.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 141.
-LaTeX Font Info:    ... okay on input line 141.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 141.
-LaTeX Font Info:    ... okay on input line 141.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 141.
-LaTeX Font Info:    ... okay on input line 141.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 141.
-LaTeX Font Info:    ... okay on input line 141.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 141.
-LaTeX Font Info:    ... okay on input line 141.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 151.
+LaTeX Font Info:    ... okay on input line 151.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 151.
+LaTeX Font Info:    ... okay on input line 151.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 151.
+LaTeX Font Info:    ... okay on input line 151.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 151.
+LaTeX Font Info:    ... okay on input line 151.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 151.
+LaTeX Font Info:    ... okay on input line 151.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 151.
+LaTeX Font Info:    ... okay on input line 151.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 151.
+LaTeX Font Info:    ... okay on input line 151.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 151.
+LaTeX Font Info:    ... okay on input line 151.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 151.
+LaTeX Font Info:    ... okay on input line 151.
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -629,7 +629,7 @@ Package caption Info: longtable package is loaded.
 Package: ltcaption 2020/05/30 v1.4b longtable captions (AR)
 )
 Package caption Info: End \AtBeginDocument code.
-Package hyperref Info: Link coloring OFF on input line 141.
+Package hyperref Info: Link coloring OFF on input line 151.
 (/home/tom/.TinyTeX/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
 (/home/tom/.TinyTeX/texmf-dist/tex/latex/refcount/refcount.sty
@@ -639,9 +639,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count303
 )
-LaTeX Info: Redefining \ref on input line 141.
-LaTeX Info: Redefining \pageref on input line 141.
-LaTeX Info: Redefining \nameref on input line 141.
+LaTeX Info: Redefining \ref on input line 151.
+LaTeX Info: Redefining \pageref on input line 151.
+LaTeX Info: Redefining \nameref on input line 151.
 (./example_manuscript.out) (./example_manuscript.out)
 \@outlinefile=\write3
 \openout3 = `example_manuscript.out'.
@@ -649,97 +649,98 @@ LaTeX Info: Redefining \nameref on input line 141.
 
 Class apa6 Warning: Short title not defined.
 
-Class apa6 Info: Keywords not defined on input line 143.
+Class apa6 Info: Keywords not defined on input line 153.
 LaTeX Font Info:    Trying to load font information for OT1+ptmcm on input line
- 143.
+ 153.
 (/home/tom/.TinyTeX/texmf-dist/tex/latex/psnfss/ot1ptmcm.fd
 File: ot1ptmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ptmcm.
 )
 LaTeX Font Info:    Trying to load font information for OML+ptmcm on input line
- 143.
+ 153.
 (/home/tom/.TinyTeX/texmf-dist/tex/latex/psnfss/omlptmcm.fd
 File: omlptmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ptmcm.
 )
 LaTeX Font Info:    Trying to load font information for OMS+pzccm on input line
- 143.
+ 153.
 (/home/tom/.TinyTeX/texmf-dist/tex/latex/psnfss/omspzccm.fd
 File: omspzccm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/pzccm.
 )
 LaTeX Font Info:    Trying to load font information for OMX+psycm on input line
- 143.
+ 153.
 (/home/tom/.TinyTeX/texmf-dist/tex/latex/psnfss/omxpsycm.fd
 File: omxpsycm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/psycm.
 )
 LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 1
-43.
+53.
 (/home/tom/.TinyTeX/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 143.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 153.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 143.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 153.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 143.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 143
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 153.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 153
 .
 (/home/tom/.TinyTeX/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 143
+LaTeX Font Info:    Trying to load font information for U+msb on input line 153
 .
 (/home/tom/.TinyTeX/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 143.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 153.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 143.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 153.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 143.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 153.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 152.
-<figs/kittens.jpg, id=42, 1027.84pt x 770.88pt>
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 153.
+<figs/kittens.jpg, id=40, 1027.84pt x 770.88pt>
 File: figs/kittens.jpg Graphic file (type jpg)
 <use figs/kittens.jpg>
-Package pdftex.def Info: figs/kittens.jpg  used on input line 161.
+Package pdftex.def Info: figs/kittens.jpg  used on input line 171.
 (pdftex.def)             Requested size: 181.3019pt x 135.97643pt.
-<example_manuscript_files/figure-latex/ourhistogram-1.pdf, id=44, 289.08pt x 28
+
+Underfull \vbox (badness 1033) has occurred while \output is active []
+
+[1{/home/tom/.TinyTeX/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
+
+
+ <./figs/kittens.jpg>]
+<example_manuscript_files/figure-latex/ourhistogram-1.pdf, id=61, 289.08pt x 28
 9.08pt>
 File: example_manuscript_files/figure-latex/ourhistogram-1.pdf Graphic file (ty
 pe pdf)
 <use example_manuscript_files/figure-latex/ourhistogram-1.pdf>
 Package pdftex.def Info: example_manuscript_files/figure-latex/ourhistogram-1.p
-df  used on input line 182.
+df  used on input line 192.
 (pdftex.def)             Requested size: 181.30531pt x 181.30531pt.
-[1{/home/tom/.TinyTeX/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
-
-
- <./figs/kittens.jpg>]
-Underfull \vbox (badness 1558) has occurred while \output is active []
-
 [2 <./example_manuscript_files/figure-latex/ourhistogram-1.pdf>] (./example_man
 uscript.aux)
 Package rerunfilecheck Info: File `example_manuscript.out' has not changed.
-(rerunfilecheck)             Checksum: 707231BB1556FCA7086A713530F8C0F6;969.
+(rerunfilecheck)             Checksum: 746742B34D522D92B3EFF7F94EAC4E8B;845.
  ) 
 Here is how much of TeX's memory you used:
- 14388 strings out of 481331
- 210537 string characters out of 5917526
- 536828 words of memory out of 5000000
- 30922 multiletter control sequences out of 15000+600000
+ 14385 strings out of 481331
+ 210497 string characters out of 5917526
+ 537289 words of memory out of 5000000
+ 30920 multiletter control sequences out of 15000+600000
  455909 words of font info for 111 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 80i,9n,85p,3177b,392s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 80i,9n,85p,3177b,443s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/home/tom/.TinyTeX/texmf-dist/fonts/enc/dvips/base/8r.enc}</home/tom/.TinyTe
 X/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></home/tom/.TinyTeX/texm
 f-dist/fonts/type1/urw/times/utmb8a.pfb></home/tom/.TinyTeX/texmf-dist/fonts/ty
 pe1/urw/times/utmr8a.pfb></home/tom/.TinyTeX/texmf-dist/fonts/type1/urw/times/u
 tmri8a.pfb>
-Output written on example_manuscript.pdf (2 pages, 155046 bytes).
+Output written on example_manuscript.pdf (2 pages, 155287 bytes).
 PDF statistics:
  114 PDF objects out of 1000 (max. 8388607)
  101 compressed objects within 2 object streams
- 30 named destinations out of 1000 (max. 500000)
- 83 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 29 named destinations out of 1000 (max. 500000)
+ 75 words of extra memory for PDF output out of 10000 (max. 10000000)
 
