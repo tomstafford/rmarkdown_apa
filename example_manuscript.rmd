@@ -113,6 +113,7 @@ apa_table(
   , caption = "Item grouping to subscales"
   , note = "This table was created with apa_table()."
   , escape = TRUE
+  , span_text_columns = FALSE
 )
 ```
 
