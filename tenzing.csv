@@ -1,3 +1,0 @@
-Order in publication,Firstname,Middle name,Surname,Conceptualization,Data Curation,Formal Analysis,Funding Acquisition,Investigation,Methodology,Project Administration,Resources,Software,Supervision,Validation,Visualization,Writing - Original Draft Preparation,Writing - Review & Editing,Email address,Primary affiliation,Secondary affiliation,Corresponding author?
-1,Tom,,Stafford,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,TRUE,t.stafford@sheffield.ac.uk,University of Sheffield,,TRUE
-2,Able,,Coauthor,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,a.coauthor@nowhere.com,University of Bergen,,FALSE
