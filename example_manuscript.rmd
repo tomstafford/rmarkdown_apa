@@ -221,6 +221,11 @@ You will find it useful to compare the output PDF document with the .rmd documen
 
 Of course, there's more effort in installing and learning and correctly marking up your document in the first place, but it is worth it.
 
+If you find this project useful, please let me know:
+
+* [t.stafford@sheffied.ac.uk](mailto:t.stafford@sheffied.ac.uk).
+* Twitter: [\@tomstafford](https://twitter.com/tomstafford).
+
 ## Unanswered questions: 
 
 What is the best way to define figure sizes so you get nice and/or consistent sizing across document formats?
