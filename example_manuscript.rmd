@@ -81,7 +81,7 @@ The heart of this is the .rmd document. You make a PDF (or whatever) by opening 
 
 To get started, let's look at some basics: formatting and referencing. You might want to compare how they look in the .rmd file and in the PDF.
 
-Here are some example references in the following sentence. Two good reviews on speed-accuracy trade-offs are @wickelgren1977speed; @heitz2014speed. References can also be inside the brackets [e.g. @stafford2020]. This paper was produced as part of the 'code club' held in the Department of Psychology at the University of Sheffield in 2019, organised by Tom Stafford and Kat Giannadou. Thanks to Frederick Aust for feedback over twitter and help with papaja[^p] 
+Here are some example references in the following sentence. A good review on speed-accuracy trade-offs is @wickelgren1977speed. References can also be inside the brackets [e.g. @stafford2020]. Reference the year only of citation like this [-@brand2022using]. Multiple references split by semicolon [@heitz2014speed; @stafford2022maximizing]. This paper was produced as part of the 'code club' held in the Department of Psychology at the University of Sheffield in 2019, organised by Tom Stafford and Kat Giannadou. Thanks to Frederick Aust for feedback over twitter and help with papaja[^p] 
 
 [^p]: And massive kudos for developing the package in the first place. Also this is an example of a footnote.
 
